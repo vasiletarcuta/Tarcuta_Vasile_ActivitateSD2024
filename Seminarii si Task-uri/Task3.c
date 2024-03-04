@@ -188,24 +188,28 @@ void vectorTVInFisierTxt(struct Televizor* tv, int nrElemente) {
     fclose(g);
 }
 
-//struct Televizor* citesteVectorTVDinFisierText(const char* numeFisier, int* numarElemente) {
+////struct Televizor* citesteVectorTVDinFisierText(const char* numeFisier, int* numarElemente) {
 //    FILE* fisier = fopen(numeFisier, "r");
 //    if (fisier == NULL) {
 //        printf("Eroare la deschiderea fisierului pentru citire.\n");
 //        return NULL;
 //    }
+//
 //    fscanf(fisier, "%d", numarElemente);
+//
 //    struct Televizor* vector = (struct Televizor*)malloc(*numarElemente * sizeof(struct Televizor));
 //    if (vector == NULL) {
 //        printf("Eroare la alocarea memoriei pentru vector.\n");
 //        fclose(fisier);
 //        return NULL;
 //    }
+//
 //    for (int i = 0; i < *numarElemente; i++) {
-//        fscanf(fisier, "%d %ms %f %d %d %f",
-//            &vector[i].cod, &vector[i].marca, &vector[i].diagonala,
+//        fscanf(fisier, "%d %s %f %d %d %f",
+//            &vector[i].cod, vector[i].marca, &vector[i].diagonala,
 //            &vector[i].rezolutie[0], &vector[i].rezolutie[1], &vector[i].pret);
 //    }
+//
 //    fclose(fisier);
 //    return vector;
 //}
@@ -246,9 +250,11 @@ int main() {
     printf("\n\n");
     afisareVector(vectorConcatenatTVMicMare, nrTelevizoareMari + nrTelevizoareMici);
 
-    //struct Televizor* vectorTelevizoare = citesteVectorTVDinFisierText("vectorTVInTxt.txt", &nrTelevizoare);
-    //afisareVector(vectorTelevizoare, nrTelevizoare);
+    /*int numarElemente;
+    struct Televizor* vectorTelevizoare = citesteVectorTVDinFisierText("vectorTVInTxt.txt", &numarElemente);
+    afisareVector(vectorTelevizoare, nrTelevizoare);*/
 
+    //dezalocareVectorTV(&vectorTelevizoare, &numarElemente);
     eliberareMem(televizorV);
     dezalocareVectorTV(&vectorTVMare, &nrTelevizoareMari);
     dezalocareVectorTV(&vectorTVMic, &nrTelevizoareMici);
