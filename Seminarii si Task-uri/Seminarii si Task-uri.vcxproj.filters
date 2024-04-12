@@ -21,5 +21,32 @@
     <ClCompile Include="Seminar2_1057.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Task1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar3_1057.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar4_1057.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar5_1057.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar7_1057.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar6_1057.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
